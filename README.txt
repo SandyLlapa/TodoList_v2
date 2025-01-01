@@ -1,14 +1,4 @@
-SQL Database username: C4131F24S002U30
-            password:  llapa016
 
-
-Login info for grader:
-Username: grader
-password: 123
-
-How to Launch Software: 
-- run the following command in terminal in the root directory:
-  npm install express mysql2 bcrypt express-session pug
 
 - To run the program, run the following command:
   node server.js
