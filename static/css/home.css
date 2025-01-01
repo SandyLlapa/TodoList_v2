@@ -1,0 +1,216 @@
+
+body{
+  background-color: #8bb1ff;
+  margin:0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #1d4ba8;
+  color: white;
+  position: relative;
+}
+
+#navigation h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.buttonsNav {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.buttonsNav button {
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+
+}
+table, th,td{
+
+  border-collapse: collapse;
+  border:3px solid #1d4ba8;
+  font-size: 18px;
+
+}
+
+#titles>th{
+  background-color: #1d4ba8;
+  padding:10px;
+  width:150px;
+  color:#ffffff
+}
+
+#sort:hover{
+  background-color: #8742ff;
+}
+
+.taskDisplay{
+  margin:0px;
+  padding:0px;
+  text-align: center;
+  font-weight: bold;
+  color: #1d4ba8;
+  background-color: #f0f8ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.taskLink {  
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+  padding: 10px;
+  margin:0px;
+ 
+}
+
+.taskLink:hover {
+  background-color: #1d4ba8;
+  color: white;
+}
+
+#sort{
+  cursor:pointer;
+}
+
+.dropdown {
+  position: relative;
+  width:12%;
+  margin-right: 15px;
+}
+
+.dropdown button:hover{
+  background-color: #8742ff;
+}
+
+.dropbtn {
+  background-color: #1d4ba8;
+  color: white;
+  font-size: 18px;
+  width:100%;
+  min-height: 55px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+  border: 3px solid rgb(221, 255, 0);
+}
+
+#todotable {
+  
+  min-height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#todotable tr {
+  height: 50px;
+}
+
+#todotable td {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+#todotable td button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#todotable td button.deleteButton {
+  background-color: rgb(250, 116, 116);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#todotable td button.deleteButton:hover {
+  opacity: 0.8;
+}
+
+#todotable td button.editButton {
+  background-color: rgb(76, 133, 255);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.1s ease, opacity 0.1s ease;
+}
+
+#todotable td button.editButton:hover {
+  opacity: 0.8;
+}
+
+#todotable th:nth-child(1), 
+#todotable td:nth-child(1) {
+  width: 80px;
+  max-width: 100px;
+  text-align: center;
+  padding: 5px;
+  overflow: hidden;
+}
+
+#todotable th:nth-child(4), #todotable td:nth-child(4),
+#todotable th:nth-child(5), #todotable td:nth-child(5) {
+  width: 80px;
+  padding: 0;
+}
+
+
+input[type="checkbox"] {
+  transform: scale(3);
+  margin: 5px;
+  cursor:pointer;
+}
+
+
+table tbody tr:hover {
+  background-color: #f0f8ff;
+}

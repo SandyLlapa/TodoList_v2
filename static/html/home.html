@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do List</title>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+  <header id="navigation">
+    <h1>To-Do List</h1>
+    <div class="buttonsNav">
+      <button onclick="window.location.href='/logout'">Log out</button>
+    </div>
+
+
+  </header>
+
+
+  <div class="container">
+    <div class="dropdown">
+      <button onclick="dropdown()" class="dropbtn">Filter</button>
+      <div id="drop" class="dropdown-content">
+        <a href="#" onclick="fetchTasks('/ToDoList')">Show All</a>
+        <a href="#" onclick="fetchTasks('/overdue-tasks')">Overdue Tasks</a>
+        <a href="#" onclick="fetchTasks('/done-tasks')">Done Tasks</a>
+        <a href="#" onclick="fetchTasks('/notdone-tasks')">Not Done Tasks</a>
+      </div>
+    </div>
+
+    <table id="todotable">
+      <thead>
+        <tr id="titles">
+          <th>Status</th>
+          <th>To-Do</th>
+          <th onclick="sortDeadline()" id="sort">Deadline <span id="icon">⬇</span></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- this is where the to do items will be inserted -->
+
+
+      </tbody>
+      <tr id="newTask">
+        <td colspan="5" class="taskDisplay">
+          <a href="/additem.html" class="taskLink">+ Add a New Task</a>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+
+  <script src="/js/home.js"></script>
+
+
+</body>
+
+</html>

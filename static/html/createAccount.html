@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="/css/createAccount.css">
+</head>
+<body>
+  <header id="navigation">
+    <h1>Create Account</h1> 
+    <div class="buttonsNav">
+      <button onclick="window.location.href='/logout'">Log out</button>
+    </div>
+
+    
+  </header>
+ 
+
+  <div id="container">
+    
+    <form id="accountForm" action="/createAccount" method="POST">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" size="50" required>
+        <br><br>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" size="50" required>
+        <br><br>
+      </div>
+      <input id="createAccountButton" type="submit" value="Create Account">
+    </form>
+  </div>
+
+  <script src="/js/createAccount.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Edit To-Do Item
+    link(rel='stylesheet', href='/css/edit-task.css')
+  body
+    #navigation
+      h1 Editing To-Do Task
+      div.buttonsNav
+        button(onclick="window.location.href='/home.html'") Home
+        button(onclick="window.location.href='/logout'") Log out
+
+    #content
+      form(action=`/edit-task/${item.id}`, method='POST')
+        #taskInput
+          label(for='todo_item') Task:
+          textarea#task(name='todo_item', required='')= item.todo_item
+          br
+          br
+        #deadline
+          label(for='date') Due Date:
+          input#date(type='date', name='deadline', required='', value=item.deadline)
+          br
+          br
+        input(type='submit', value='Submit')
