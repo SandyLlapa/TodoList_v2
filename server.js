@@ -13,7 +13,7 @@ app.use(express.json());
 var connection = new Pool({
   host: "localhost",
   user: "sandyllapa",
-  password: "nature134",
+  password: "123",
   database: "sandyllapa",
   port: 5432
 });
